@@ -1,43 +1,102 @@
-# Academic Evaluation Criteria – Python
+Academic Evaluation Criteria – Python
 
-## Overview
-This project formalizes academic evaluation criteria into explicit, reproducible Python rules.
+Formalizing academic evaluation criteria into explicit, reproducible Python rules.
 
-The goal is not to replace academic judgment, but to make implicit evaluation criteria explicit, auditable, and testable, separating:
-- rules
-- exceptions
-- and human intervention
+This project implements rule-based evaluation logic for different types of academic assignments, separating:
 
-## Problem
-Academic evaluation often relies on implicit criteria that:
-- are difficult to communicate,
-- are inconsistently applied,
-- and are hard to audit or reproduce.
+Technical rules
 
-This project addresses that gap by translating evaluation logic into code.
+Formal requirements
 
-## Approach
-- Evaluation criteria are expressed as explicit Python rules.
-- Rules are separated from data input and reporting logic.
-- Edge cases and exceptions are documented and handled explicitly.
-- Human review is preserved where automation is not appropriate.
+Exceptions
 
-## Scope
-Included:
-- Python scripts implementing evaluation criteria
-- Examples of rule-based evaluation logic
-- Documentation of assumptions and limitations
+Human judgment
 
-Not included:
-- Real student data
-- Automated grading decisions without human validation
+The objective is to transform implicit correction criteria into transparent, testable, and reusable evaluation scripts.
 
-## Why this matters
-This type of formalization is applicable beyond academia, including:
-- business rule engines
-- decision support systems
-- data quality validation
-- auditability in analytics pipelines
+Project Structure
+academic-evaluation-criteria-python/
+│
+├── bpmn/
+│   ├── scripts for BPMN evaluation
+│   └── README.md
+│
+├── database/
+│   ├── scripts for database evaluation
+│   └── README.md
+│
+└── README.md
 
-## Status
-Work in progress. Scripts and documentation will be incrementally added.
+Modules
+📌 bpmn/
+
+Contains Python scripts that formalize evaluation criteria for BPMN modeling exercises.
+
+Although originally designed for a specific assignment or topic, the logic is structured to be adaptable to:
+
+Any BPMN exercise
+
+Any canonical process model
+
+Any defined rubric structure
+
+Focus areas include:
+
+Structural validation
+
+Rubric-based scoring
+
+Integration of administrative and technical criteria
+
+📌 database/
+
+Contains Python scripts for rule-based evaluation of Database assignments.
+
+The logic supports:
+
+Comparison against a canonical schema
+
+SQL validation
+
+Integration of schema and query feedback
+
+Rubric-based scoring
+
+Although initially developed for a specific topic, the structure is adaptable to any database assignment with a defined canonical reference.
+
+Methodological Principles
+
+This project is based on three core principles:
+
+Explicitness
+Evaluation rules must be clearly defined and codified.
+
+Reproducibility
+The same input must always produce the same evaluation result.
+
+Separation of concerns
+Distinguish between:
+
+Automatic rule validation
+
+Exceptions
+
+Context-dependent academic judgment
+
+The scripts are not meant to replace human evaluation, but to formalize and stabilize the technical component of grading.
+
+Educational Context
+
+This repository reflects a broader objective:
+
+Transform correction criteria from tacit knowledge into structured, computational rules.
+
+It is especially useful in contexts where:
+
+Large numbers of assignments must be evaluated
+
+Rubrics must be consistently applied
+
+Transparency in grading is required
+
+Feedback should be partially automated
