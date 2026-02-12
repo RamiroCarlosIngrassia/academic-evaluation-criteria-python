@@ -2,7 +2,21 @@ Academic Evaluation Criteria – Python
 
 Formalizing academic evaluation criteria into explicit, reproducible Python rules.
 
-This project implements rule-based evaluation logic for different types of academic assignments, separating:
+Overview
+
+This project implements rule-based evaluation logic for different types of academic assignments.
+
+The objective is to transform implicit correction criteria into:
+
+Transparent evaluation rules
+
+Testable validation logic
+
+Reusable scripts
+
+Clear separation between automated checks and human judgment
+
+The approach distinguishes between:
 
 Technical rules
 
@@ -12,91 +26,54 @@ Exceptions
 
 Human judgment
 
-The objective is to transform implicit correction criteria into transparent, testable, and reusable evaluation scripts.
-
 Project Structure
-academic-evaluation-criteria-python/
-│
-├── bpmn/
-│   ├── scripts for BPMN evaluation
-│   └── README.md
-│
-├── database/
-│   ├── scripts for database evaluation
-│   └── README.md
-│
-└── README.md
 
-Modules
-📌 bpmn/
+The repository is organized by assignment type.
+
+📌 BPMN
 
 Contains Python scripts that formalize evaluation criteria for BPMN modeling exercises.
 
-Although originally designed for a specific assignment or topic, the logic is structured to be adaptable to:
+Although originally developed for a specific topic, the logic is designed to be adaptable to any BPMN assignment with defined evaluation rules.
 
-Any BPMN exercise
+Includes:
 
-Any canonical process model
+Rubric calculation scripts
 
-Any defined rubric structure
+Integration of technical and administrative criteria
 
-Focus areas include:
+Structured scoring logic
 
-Structural validation
+📌 Database
 
-Rubric-based scoring
+Contains Python scripts implementing rule-based evaluation for Database assignments.
 
-Integration of administrative and technical criteria
+Originally developed for a specific topic, the logic is structured to be adaptable to any database assignment with:
 
-📌 database/
+A canonical schema
 
-Contains Python scripts for rule-based evaluation of Database assignments.
+Defined SQL requirements
 
-The logic supports:
+Explicit correction criteria
 
-Comparison against a canonical schema
+Includes:
+
+Schema comparison against canonical definitions
 
 SQL validation
 
-Integration of schema and query feedback
+Integration of evaluation feedback
 
-Rubric-based scoring
+Design Philosophy
 
-Although initially developed for a specific topic, the structure is adaptable to any database assignment with a defined canonical reference.
+The core principle of this repository is:
 
-Methodological Principles
+Make evaluation criteria explicit, structured, and reproducible.
 
-This project is based on three core principles:
+Each script focuses on separating:
 
-Explicitness
-Evaluation rules must be clearly defined and codified.
+What can be evaluated automatically
 
-Reproducibility
-The same input must always produce the same evaluation result.
+What requires interpretative or contextual academic judgment
 
-Separation of concerns
-Distinguish between:
-
-Automatic rule validation
-
-Exceptions
-
-Context-dependent academic judgment
-
-The scripts are not meant to replace human evaluation, but to formalize and stabilize the technical component of grading.
-
-Educational Context
-
-This repository reflects a broader objective:
-
-Transform correction criteria from tacit knowledge into structured, computational rules.
-
-It is especially useful in contexts where:
-
-Large numbers of assignments must be evaluated
-
-Rubrics must be consistently applied
-
-Transparency in grading is required
-
-Feedback should be partially automated
+This allows greater transparency, consistency, and methodological clarity in academic assessment.
